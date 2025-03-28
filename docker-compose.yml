@@ -2,7 +2,5 @@ version: "3.9"
 services:
   app:
     image: "tayfunkarakavuz/docker:1"
-    build:
-      context: .
     ports:
       - "8000:8000"
