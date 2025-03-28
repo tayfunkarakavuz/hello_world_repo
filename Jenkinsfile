@@ -39,7 +39,7 @@ pipeline {
                         sh """
                         scp -o StrictHostKeyChecking=no ${DotEnvFile} ${DockerComposeFile} ec2-user@${EC2_IP}:/home/ec2-user
                         ssh -o StrictHostKeyChecking=no ec2-user@${EC2_IP} "docker-compose -f /home/ec2-user/${DockerComposeFile} --env-file /home/ec2-user/${DotEnvFile} down"
-                        ssh -o StrictHostKeyChecking=no ec2-user@${EC2_IP} "docker compose -f /home/ec2-user/${DockerComposeFile} --env-file /home/ec2-user/${DotEnvFile} up -d"
+                        ssh -o StrictHostKeyChecking=no ec2-user@${EC2_IP} "docker-compose -f /home/ec2-user/${DockerComposeFile} --env-file /home/ec2-user/${DotEnvFile} up -d"
                         """
                     }
                 }
