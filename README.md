@@ -1,13 +1,2 @@
-# test-linux2-server
-# update-readme
-# update-readme2
-# update-readme5
-# update-readme6
-# update-readme7
-# update-readme8
-# update-readme9
-# update-readme10
-# update-readme11
-# update-readme12
-# update-readme13
-# update-readme17
+# Create a target ec2 instance (We will be copy the docker image from source ec2 instance to that server and run that image)
+# Create a source ec2 instance 
