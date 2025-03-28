@@ -1,6 +1,6 @@
 version: "3.9"
 services:
   app:
-    image: "tayfunkarakavuz/docker:${BUILD_NUMBER}"
+    image: "tayfunkarakavuz/docker:1"
     ports:
       - "8000:8000"
